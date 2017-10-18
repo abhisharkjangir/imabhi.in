@@ -1,13 +1,13 @@
 import React from 'react'
 import {Button,Carousel} from 'react-bootstrap'
-
+import bg from './testimonialbg.jpg'
 export const Testimonial = (props) => (
   <div className='testimonial-screen'>
     <div className="container">
       <div className="row">
         <Carousel pauseOnHover={true} controls={true} >
           <Carousel.Item>
-            <img height={300} className="img-responsive" src="https://s3.amazonaws.com/feather-client-files-aviary-prod-us-east-1/2017-10-14/8f4f3083-e545-42b2-8ea7-f32cebda63f3.jpg"/>
+            <img height={300} className="img-responsive" src={bg}/>
             <Carousel.Caption>
               {/* <img className='img-responsive img-circle' width="100" height="100" src='http://programmerhasan.com/demos/shine/shine/assets/img/author.jpg' /> */}
               <h4>Ankit Bhanger</h4>
@@ -17,7 +17,7 @@ export const Testimonial = (props) => (
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img height={300} className="img-responsive" src="https://s3.amazonaws.com/feather-client-files-aviary-prod-us-east-1/2017-10-14/8f4f3083-e545-42b2-8ea7-f32cebda63f3.jpg"/>
+            <img height={300} className="img-responsive" src={bg}/>
             <Carousel.Caption>
               {/* <img className='img-responsive img-circle' width="100" height="100" src='http://programmerhasan.com/demos/shine/shine/assets/img/author.jpg' /> */}
               <h4>Madhav Shankar</h4>

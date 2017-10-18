@@ -2,7 +2,7 @@ import React from 'react'
 import {IndexLink, Link} from 'react-router'
 import {Button,FormGroup,ControlLabel,FormControl,FieldGroup,Form,Col } from 'react-bootstrap'
 
-export const Contact = () => (
+export const Contact = (props) => (
   <div id="contact" className='contact-screen'>
     <div className='container'>
       <div className="row">
@@ -13,10 +13,11 @@ export const Contact = () => (
       <div className="row">
         <div className="col-md-6">
           <div className="contact-form">
-            <input type="text" className="input-box" placeholder="Enter Your Good Name *"/>
-            <input type="text" className="input-box" placeholder="Enter Your Email Address *"/>
-            <textarea rows="4" cols="50" placeholder="Enter Your Message/Query *" className="textarea-box"></textarea>
-            <Button bsStyle="primary" bsSize="large" className="theme-btn" block>Block level button</Button>
+            <input type="text" name="name" value={props.statedata.name} className="input-box" placeholder="Enter Your Good Name *" onChange={props.updateform}/>
+            <input type="email" name="email" value={props.statedata.email} className="input-box" placeholder="Enter Your Email Address *" onChange={props.updateform} required/>
+            <textarea rows="4" name="msg" value={props.statedata.msg} cols="50" placeholder="Enter Your Message/Query *" className="textarea-box" onChange={props.updateform}></textarea>
+            <Button bsStyle="primary" bsSize="large" className="theme-btn" block onClick={props.sendQuery}
+              disabled={!props.statedata.btn} ><i className="fa fa-paper-plane" aria-hidden="true"></i> Send</Button>
           </div>
         </div>
         <div className="col-md-6">

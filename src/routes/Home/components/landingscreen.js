@@ -8,7 +8,7 @@ export const Landingscreen = (props) => (
       <h3 id="text" className={props.fade}>{props.text}</h3>
       <div id="section10">
         <a >
-          <span></span>
+          <span onClick={() => props.gotoanchorfn('about')}></span>
         </a>
       </div>
     </div>
