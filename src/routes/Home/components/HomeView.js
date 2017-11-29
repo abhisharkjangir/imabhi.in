@@ -119,7 +119,6 @@ class HomeView extends Component {
       </div>
     )
   }
-
 }
 
 export default HomeView

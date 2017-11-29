@@ -1,6 +1,7 @@
 import React from 'react'
 import {IndexLink, Link} from 'react-router'
 import {Button,FormGroup,ControlLabel,FormControl,FieldGroup,Form,Col } from 'react-bootstrap'
+import FontAwesome  from 'react-fontawesome'
 
 export const Contact = (props) => (
   <div id="contact" className='contact-screen'>
