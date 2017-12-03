@@ -85,7 +85,10 @@ class HomeView extends Component {
     let state = this.state
     if(state.name && state.email && this.emailValidator(state.email) && state.msg ){
       this.setState({btn : false})
-      fetch('https://imabhi.herokuapp.com/contact',{method : 'post',body: JSON.stringify({name: state.name, email: state.email,query : state.msg})})
+      fetch('http://imabhi.herokuapp.com/contact',{method : 'post',headers: {
+          'Accept': 'application/json',
+          'Content-Type' : 'application/json'
+        },body: JSON.stringify({name: state.name, email: state.email,query : state.msg})})
       .then(r => r.json())
       .then(r => {
         if(r.success){

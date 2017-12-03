@@ -1,4 +1,4 @@
-$theme-color: #fccc3e;
+$theme-color: #2BD3C8;
 // = = = = = = = = = = =
 // Header
 // = = = = = = = = = = =
@@ -575,7 +575,7 @@ a:hover,a:focus{
   color: $theme-color;
   cursor: pointer;
   background-color: #fff;
-  border: 2px solid #fccc3e;
+  border: 2px solid $theme-color;
   border-radius: 80px;
   padding: 6px 12px;
   box-shadow: 0 0 20px rgba(80,76,76,.46);
