@@ -263,7 +263,7 @@ a:hover,a:focus{
   font-size: 16px;
 }
 
-.intro-screen img:hover {
+.intro-screen img ,intro-screen img:hover {
   transition: all 0.5s ease-out;
   -webkit-filter: grayscale(100%);
   /* Chrome, Safari, Opera */

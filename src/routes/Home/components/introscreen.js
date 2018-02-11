@@ -1,7 +1,7 @@
 import React from 'react'
 import {IndexLink, Link} from 'react-router'
 import {Button} from 'react-bootstrap'
-import abhi from './2.jpg'
+import abhi from './abhi.jpg'
 export const Intro = (props) => (
   <div id="about" className='intro-screen'>
     <div className='container'>
