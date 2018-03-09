@@ -10,13 +10,14 @@ import Experience from './experiencescreen'
 import Resume from './resumescreen'
 import Testimonial from './testimonialscreen'
 import Contact from './contactscreen'
+import Portfolio from './portfolio'
 const EMAIL_REGEX = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 toastr.options.closeButton = true;
 toastr.options.closeMethod = 'fadeOut';
 toastr.options.closeEasing = 'swing';
 toastr.options.progressBar = true;
 
-const LANDING_TITLES = ['Javascript Developer', 'Front End Developer', 'Web Designer'];
+const LANDING_TITLES = ['a Front End Developer', 'Web Designer'];
 
 class HomeView extends Component {
   constructor() {
@@ -51,14 +52,14 @@ class HomeView extends Component {
   }
 
   textAnimator() {
-    let item = 1;
-    setInterval(function() {
-      if (item == LANDING_TITLES.length - 1)
-        item = 0
-      else
-        item++
-      this.setState({landingText: LANDING_TITLES[item]})
-    }.bind(this), 3000);
+    // let item = 1;
+    // setInterval(function() {
+    //   if (item == LANDING_TITLES.length - 1)
+    //     item = 0
+    //   else
+    //     item++
+      this.setState({landingText: LANDING_TITLES[0]})
+    // }.bind(this), 3000);
   }
 
   gotoAnchor(anchor){
@@ -108,11 +109,12 @@ class HomeView extends Component {
     return (
       <div>
         <Header active={this.state.activeMenu} hclass={this.state.headerClass} gotoanchorfn={this.gotoAnchor}/>
-        <Landingscreen text={this.state.landingText} fade="fade-in" gotoanchorfn={this.gotoAnchor}/>
+        <Landingscreen text={this.state.landingText} fade="animate-bottom" gotoanchorfn={this.gotoAnchor}/>
         <Intro gotoanchorfn={this.gotoAnchor}/>
         <Speciality/>
         <Skills/>
         <Experience/>
+        <Portfolio/>
         <Resume/>
         <Testimonial/>
         <Contact sendQuery={this.sendContactQuery} updateform={this.updateForm} statedata={{name : this.state.name,email : this.state.email,msg : this.state.msg, btn : this.state.btn}}/>

@@ -18,7 +18,7 @@ export const Speciality = () => (
           <Specilitycard name="DOCUMENTED CODE" desc="I believe that code should be wrriten in a such manner that another developer can easily understand it." img={documented}/>
         </div>
         <div className="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-          <Specilitycard name="THIRD PARTY INTEGRATION" desc="I have experience of integrating third party tools or libraries such as Branch, Adobe Creative SDK etc, Fine S3 Uploader etc." img={thirdparty}/>
+          <Specilitycard name="THIRD PARTY INTEGRATION" desc="I have experience of integrating third party tools or libraries such as Branch, Adobe Creative SDK etc." img={thirdparty}/>
         </div>
         <div className="col-md-4 col-lg-4 col-sm-6 col-xs-12">
           {/* <Specilitycard name="UI FRAMEWORKS" desc="I am familiar in using several frameworks like Bootstrap, Angular Material, Materialize CSS etc." img="http://imabhi.in/img/framwork.png"/> */}

@@ -13,19 +13,19 @@ export const Skills = () => (
           <Skillcard name="CSS/CSS3/SASS" percent="80" />
         </div>
         <div className="col-md-3 col-lg-3 col-sm-4 col-xs-6">
-          <Skillcard name="JAVASCRIPT" percent="75" />
+          <Skillcard name="JAVASCRIPT/ES6" percent="75" />
         </div>
         <div className="col-md-3 col-lg-3 col-sm-4 col-xs-6">
-          <Skillcard name="BOOTSTRAP" percent="90" />
+          <Skillcard name="BOOTSTRAP 4" percent="90" />
         </div>
         <div className="col-md-3 col-lg-3 col-sm-4 col-xs-6">
-          <Skillcard name="ANGULAR JS" percent="80" />
+          <Skillcard name="ANGULAR JS 1" percent="80" />
         </div>
         <div className="col-md-3 col-lg-3 col-sm-4 col-xs-6">
-          <Skillcard name="REACT/REDUX" percent="60" />
+          <Skillcard name="REACT/REDUX" percent="70" />
         </div>
         <div className="col-md-3 col-lg-3 col-sm-4 col-xs-6">
-          <Skillcard name="NODE JS" percent="60" />
+          <Skillcard name="NODE JS" percent="65" />
         </div>
         <div className="col-md-3 col-lg-3 col-sm-4 col-xs-6">
           <Skillcard name="JQUERY" percent="70" />

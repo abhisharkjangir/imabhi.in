@@ -17,6 +17,7 @@ export const Header = (props) => (
           <NavItem active={'about' === props.active} eventKey={2} href="#about" onClick={() => props.gotoanchorfn('about')}>About me</NavItem>
           <NavItem active={'whatido' === props.active} eventKey={3} href="#" onClick={() => props.gotoanchorfn('whatido')}>What i do</NavItem>
           <NavItem active={'experience' === props.active} eventKey={4} href="#" onClick={() => props.gotoanchorfn('experience')}>Experience</NavItem>
+          <NavItem active={'portfolio' === props.active} eventKey={4} href="#" onClick={() => props.gotoanchorfn('portfolio')}>Portfolio</NavItem>
           <NavItem active={'contact' === props.active} eventKey={5} href="#" onClick={() => props.gotoanchorfn('contact')}>Contact</NavItem>
         </Nav>
       </Navbar.Collapse>

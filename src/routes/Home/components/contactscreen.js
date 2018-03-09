@@ -39,6 +39,13 @@ export const Contact = (props) => (
           </div>
         </div>
       </div>
+      <div className="row">
+        <div className="col-md-12 text-center">
+          <div className="thanks">
+            <h3>Thanks for visiting my portfolio 😊</h3>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 )
